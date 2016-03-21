@@ -92,10 +92,19 @@ module.exports = function(grunt) {
               /\.svg/.test(propertyName)
 
             ){
+              // replace in src attributes
 
               tagToFind = '[src="' + newPath + '"]';
 
               newElem = $(tagToFind).attr('src', newSrcValue);
+
+              $(tagToFind).replaceWith( newElem );
+
+              // replace content in <meta> tags
+
+              tagToFind = 'meta[content="' + newPath + '"]'
+
+              newElem = $(tagToFind).attr('content', newSrcValue);
 
               $(tagToFind).replaceWith( newElem );
 
@@ -106,9 +115,19 @@ module.exports = function(grunt) {
 
             ){
 
+              // replace href in <link> tags
+
               tagToFind = 'link[href="' + newPath + '"]'
 
               newElem = $(tagToFind).attr('href', newSrcValue);
+
+              $(tagToFind).replaceWith( newElem );
+
+              // replace content in <meta> tags
+
+              tagToFind = 'meta[content="' + newPath + '"]'
+
+              newElem = $(tagToFind).attr('content', newSrcValue);
 
               $(tagToFind).replaceWith( newElem );
 
