@@ -1,6 +1,6 @@
 # grunt-userevvd [![Build Status](http://img.shields.io/travis/kylerush/grunt-userevvd.svg?branch=master)](https://github.com/kylerush/grunt-userevvd) [![NPM version](https://badge.fury.io/js/grunt-userevvd.svg)](http://badge.fury.io/js/grunt-userevvd)
 
-> Replaces &lt;script&gt;, &lt;link&gt;, &lt;meta&gt;, and &lt;img&gt; HTML tags with their rev'd version for client and edge server caching.
+> Replaces &lt;script&gt;, &lt;link&gt;, and &lt;img&gt; HTML tags with their rev'd version for client and edge server caching.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
